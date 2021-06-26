@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GiaoDienNhanVien.master.cs" Inherits="DATN_QLKS.GiaoDienNhanVien" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Quyền Truy Cập Nhân VIên</title>
+    <style>
+        body{
+            margin:auto;
+            text-align:center;
+            width:1000px;
+        }
+        .haha{
+            text-align:right
+        }
+        .tkk{
+            color:#b81ded;
+        }
+         .menu ul li{
+    list-style-type: none;
+    height: 40px;
+    
+    line-height: 40px;
+    background-color:#9f9595;
+    width: 250px;
+    float: left;
+    text-align: center;
+     
+       }
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    
+}
+ul li:hover {
+    background-color: #2c5fed;
+}
+ul li ul li{
+    display: none;
+     margin-left:-40px;
+}
+ul li:hover ul li{
+    display: block;
+     position:relative;
+   
+}
+ .menu{
+      width:1480px;
+      margin-top:-20px;
+       margin-left:-40px;
+     
+      
+     
+         }
+ .menu ul li a:focus{
+     color:#09e465;
+ }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <br />
+            <hr />
+            <h2 style="color:#3119d4">Quyền Truy Cập Nhân Viên</h2>
+
+            <br />
+            <div class="haha">
+                <asp:Label ID="QLL" runat="server" Text="" CssClass="tkk"></asp:Label>&nbsp;&nbsp; 
+              <a href="DangNhap.aspx" style="text-decoration:none;color:#4122c2">Đăng Xuất</a> 
+            </div>
+            <br />
+            <div class="menu">
+            <ul>
+               
+
+                   
+               <li> <a href="DatPhongCuaNhanVien.aspx">Đặt Phòng Trực Tiếp </a>
+                    <ul>
+                       
+                    </ul>
+                </li>
+                <li> <a href="NhanPhong.aspx">Nhận Phòng</a>
+                    
+                </li>
+                <li> <a href="SuDungThietBi.aspx"> Sử Dụng Dịch Vụ Thiết Bị
+                     </a>
+                    <ul>
+                       
+                    </ul>
+                </li>
+                 <li> <a href="TraPhong.aspx">Trả Phòng</a>
+                    <ul>
+                       
+                    </ul>
+                </li>
+                
+               
+             
+                
+                
+               
+                 
+               
+            </ul>
+
+                </div>
+            <br />
+             <br />
+             <br />
+           
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             
+        </div>
+
+    </form>
+    <p>
+        &nbsp;</p>
+</body>
+</html>
